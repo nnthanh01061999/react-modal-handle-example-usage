@@ -1,6 +1,10 @@
 import { Button, Modal } from "antd";
 import React from "react";
-import { ModalHandleProps, useModalHandle } from "react-modal-handle";
+import {
+  ModalHandleProps,
+  useModalHandle,
+  withModalHandle,
+} from "react-modal-handle";
 
 interface ModalAProps extends ModalHandleProps {
   content: string;
@@ -24,4 +28,4 @@ function ModalA(props: ModalAProps) {
   );
 }
 
-export default ModalA;
+export default withModalHandle(ModalA, "modal-a");

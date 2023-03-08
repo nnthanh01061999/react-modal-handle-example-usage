@@ -1,6 +1,10 @@
 import { Button, Modal } from "antd";
 import React from "react";
-import { ModalHandleProps, useModalHandle } from "react-modal-handle";
+import {
+  ModalHandleProps,
+  useModalHandle,
+  withModalHandle,
+} from "react-modal-handle";
 
 function ModalB(props: ModalHandleProps) {
   const { onClose } = props;
@@ -20,4 +24,4 @@ function ModalB(props: ModalHandleProps) {
   );
 }
 
-export default ModalB;
+export default withModalHandle(ModalB, "modal-b");

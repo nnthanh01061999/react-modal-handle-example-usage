@@ -1,13 +1,10 @@
 import ModalA from "@/components/ModalA";
 import ModalB from "@/components/ModalB";
-import { Button } from "antd";
-import { useModalHandle, withModalHandle } from "react-modal-handle";
-
-const ModalAWithHandle = withModalHandle(ModalA, "modal-a");
-const ModalBWithHandle = withModalHandle(ModalB, "modal-b");
+import { Button, Space } from "antd";
+import { useModalHandle } from "react-modal-handle";
 
 export default function Home() {
-  const { openModal } = useModalHandle();
+  const { openModal, isModalOpen } = useModalHandle();
 
   return (
     <div
@@ -19,11 +16,13 @@ export default function Home() {
         width: "100vw",
       }}
     >
-      <Button onClick={() => openModal("modal-a")}>Open Modal A</Button>
-
-      <Button onClick={() => openModal("modal-b")}>Open Modal B</Button>
-      <ModalAWithHandle content="Content" />
-      <ModalBWithHandle />
+      <Space>
+        <Button onClick={() => openModal("modal-a")}>Open Modal A</Button>
+        <Button onClick={() => openModal("modal-b")}>Open Modal B</Button>
+        <p>Modal A is opened: {isModalOpen("modal-a") ? "Yes" : "No"}</p>
+      </Space>
+      <ModalA content="Content" />
+      <ModalB />
     </div>
   );
 }
