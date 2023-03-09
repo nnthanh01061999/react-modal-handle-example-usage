@@ -2267,10 +2267,10 @@ react-is@^16.12.0, react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-modal-handle@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-modal-handle/-/react-modal-handle-1.0.8.tgz#58d5da4c29eebcca20dfad73f460c016b45f36cc"
-  integrity sha512-B/fVBDI/oHaKkgI8qXgXi/Pk0WWK9etvGUGn6Pw+5OPlFMeOGIfRG20xOyU7jkIRTBj/qKXgXgtbWaF9xuNcEw==
+react-modal-handle@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-modal-handle/-/react-modal-handle-1.0.10.tgz#55104dfea3f2a2b1765b4cb25754736053417608"
+  integrity sha512-zqtTscBffTi+28WsKGm+Tk13yHiCA2qXZ7SmNL3xkxM8w0DQ0PM8zlw4ebtAWg+WJQo4sf+Z1HYFc9bYVzaxFQ==
 
 react@18.2.0:
   version "18.2.0"
